@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2ecc71;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.nav-bar {
+    position: relative;
+    width: inherit;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d6d6d6;
+    margin-bottom: 20px;
+}
+
+.nav-bar h4 {
+    padding: 20px 50px;
+}
+
+.nav-bar ul {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-bar ul li {
+    padding: 0px 20px;
+}
+
+.nav-bar ul li a {
+    color: #6d6d6d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.app {
+    height: 400px;
+    width: 400px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: block;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.app form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.app form .inputField {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: 2px solid #e74c3c;
+    color: #000;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.app form button[type="submit"] {
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid #e74c3c;
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.view {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid yellow;
+    border-radius: 6px;
+}
+
+.view .v-content {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: lighter;
+}
+
+.view .v-btn-delete {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.view .v-btn-delete:hover {
+    font-size: 22px;
+    color: red;
+}
+
+.TodoForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.MuiTypography-body2 {
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    text-transform: capitalize;
+}
+
+.MuiListItem-gutters {
+    padding-left: unset !important;
+}
+
+.MuiIconButton-root {
+    color: rgb(134 51 51 / 78%) !important;
+}
+
+.MuiTypography-body2 {
+    color: #d35400;
+}
+
+.MuiListItem-gutters {
+    margin-bottom: 20px;
+}
+
+.MuiButtonBase-root {
+    margin: 0px 5px !important;
+}
+
+.list {
+    cursor: pointer;
+}
+
+.list.todo {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.list.todo-completed {
+    text-decoration: line-through;
+    opacity: .5;
+}
